@@ -1,0 +1,18 @@
+### GET with no link
+GET http://localhost:5000/
+
+### GET with an invalid link
+GET http://localhost:5000/
+Content-Type: application/json
+
+{
+  "link": "test"
+}
+
+### GET with a valid link
+GET http://localhost:5000/
+Content-Type: application/json
+
+{
+  "link": "https://www.imdb.com/title/tt0133093/"
+}
